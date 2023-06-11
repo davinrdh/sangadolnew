@@ -10,7 +10,8 @@ const routes: Routes = [
   {path: 'home', component: HomePageComponent},
   {path: 'event', component: EventPageComponent},
   {path: 'idolgroup', component: OurIdolComponent},
-  {path: 'about', component: AboutUsComponent}
+  {path: 'about', component: AboutUsComponent},
+  // {path: 'home', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)}
 ];
 
 @NgModule({

@@ -1,0 +1,55 @@
+$primary: #1862C2;
+
+*{
+    background-color: #1862C2;
+    color: whitesmoke;
+}
+
+.box {
+    width: 255px;
+    height: 255px;
+    border-radius: 5px;
+    background-color: #ff4e49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 4px 1px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+    }
+}
+
+.box:hover {
+    zoom: 150%;
+}
+
+.part {
+    // margin-top: 2rem;
+    
+    h1 {
+        font-weight: 700;
+    }
+}
+
+.part-responsive {
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .part-responsive{
+        display: block;
+    }
+
+    .part-desktop {
+        display: none;
+    }
+    
+}
+
+
